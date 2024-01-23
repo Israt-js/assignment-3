@@ -1,0 +1,17 @@
+.te-2-1{
+    background-size: cover;
+    border-radius: 13px;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url("Images/2.png");
+}
+
+.te-2-2{
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url("Images/3.png");
+}
+.te-1{
+    background-size: cover;
+    border-radius: 13px;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url("Images/4.png");
+}
+.products{
+    box-shadow: ;
+}
