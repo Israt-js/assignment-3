@@ -12,6 +12,28 @@
     border-radius: 13px;
     background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url("Images/4.png");
 }
-.products{
-    box-shadow: ;
+@media screen and (max-width:500px) and (min-width:370px)  {
+    .ju-pro{
+       font-size: 20px;
+    }
+    .ju-des{
+        padding-left: 8px;
+        text-align: left;
+    }
+    .fac-ra{
+        flex-direction: column;
+    }
+    .prog{
+        margin-left: 10px;
+    }
+    .pro-prog{
+        flex-direction: column;
+    }
+    .prod-n{
+        columns: 1;
+    }
+    .im-5{
+        align-items: center;
+    }
 }
+

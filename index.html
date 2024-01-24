@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link class="text-[#FFF] text-sm font-medium" href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" class="text-[#FFF] text-sm font-medium" href="style.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope&display=swap');
@@ -20,52 +20,74 @@
 <body class="font-m">
     
      <header>
-        <!-- <nav>
-            <div class="all-nav">
-                <div class="nav-text">
-                    <img src="Images/Group 40071 (2).png" alt="">
-                    <h2>F<span class="u-s">u</span>N Tr<span class="a-s">A</span>vel</h2>
+        <div class="navbar bg-base-100">
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </div>
-                <i class="fa-solid icon-h fa-bars"></i>
-                <div>
-                    <ul class="nav-li">
-                        <li><a href="#"><span >Home</span></a></li>
-                        <li><a href="#">Packages</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Packages</a></li>
+                    <li><a>Testimonial</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                    
+                  </ul>
+              </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost text-xl">Hockey <span class="text-orange-600">'</span> s</a>
+              </div>
+            <div class="navbar-start">
+
+                <ul class="hidden lg: nav-li flex space-x-2 space-y-2 ml-96">
+                    <li><a class="text-orange-500 text-sm font-medium" href="#">Home</a></li>
+                    <li><a class="text-[#FFF] text-sm font-medium" href="#">Packages</a></li>
+                    <li><a class="text-[#FFF] text-sm font-medium" href="#">Testimonial</a></li>
+                    <li><a class="text-[#FFF] text-sm font-medium" href="#">Blog</a></li>
+                    <li><a class="text-[#FFF] text-sm font-medium" href="#">Contact</a></li>
+                </ul>
             </div>
-        </nav> -->
+
+            <div class="navbar-end">
+              <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -ml-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+              <button class="btn bg-orange-500">Get Ticket</button>
+            </div>
+          </div>
        <section class="banner ">
-        <div class="carousel w-full">
+        <div class="relative carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
+              <img src="Images/1.png" class="w-full rounded-1xl" />
+              <div class="text-center lg: absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a class="text-black w-7 h-7 rounded-full p-2 text-sm bg-slate-50 font-medium" href="#slide4" class="btn btn-circle">❮</a> 
+                <a class="text-black w-7 h-7 rounded-full p-2 text-sm bg-slate-50 font-medium" href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
               <img src="Images/4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
+                <a class="text-black w-7 h-7 rounded-full p-2 text-sm bg-slate-50 font-medium" href="#slide1" class="btn btn-circle">❮</a> 
+                <a class="text-black w-7 h-7 rounded-full p-2 text-sm bg-slate-50 font-medium" href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
+            <div class="mt-24 ml-14 h-28 w-72 lg:mt-96 lg:ml-[790px] absolute bg-black p-5 lg:h-36 lg:w-96 rounded-md">
+                <h4 class="pb-1 lg:pb-3 font-bold text-[#FFF]">Meet all the heroes from the field</h4>
+                <p class="text-[#FFF]">Our main target is here. And it's our one target, hope we success. Everything we can do, just beleive yourself.</p>
+            </div>
+        </div>
        </section>
 
      </header> <br><br><br><br>
      <main>
-        <section class="pro">
+        <section class="pro column-1">
             <div class="">
-                <h1 class="text-3xl font-extrabold text-center">Professional Hockeys Club</h1>
-                <p class="text-sm font-medium ml-[35px] pt-4 text-slate-600 text-center">How many times have you heard. Cut down on confusion and delays <br> with a to-the-point text reminder.</p>
+                <h1 class="ju-pro lg: text-3xl font-extrabold text-center">Professional Hockeys Club</h1>
+                <p class="ju-des lg:ml-80 text-sm font-medium w-[540px] pt-4 text-slate-600 text-center">How many times have you heard. Cut down on confusion and <br> delays with a to-the-point text reminder.</p>
             </div>
-            <div class="flex font-bold pt-10">
+            <div class="fac-ra lg: flex font-bold pt-10">
 
-                <div class="ml-16">
+                <div class=" prog  ml-16">
                     <div class="radial-progress text-red-400 ml-24" style="--value:87;" role="progressbar">87%</div>
                  <h6 class="text-center">Prayer Facility</h6>
                  <p class="text-sm font-medium ml-[35px] pt-4 text-slate-600 text-center">Make sure you're page with your customers.</p>
@@ -88,7 +110,6 @@
                  <h6 class="text-center">Prayer Facility</h6>
                  <p class="text-sm font-medium ml-[35px] pt-4 text-slate-600 text-center">Make sure you're page with your customers.</p>
                 </div>
-
             </div>
         </section>
 
@@ -98,7 +119,7 @@
               <p class="text-sm font-medium ml-[35px] pt-4 text-slate-600 text-center">Customers aren't the only ones who can benefit from text messages. SMS makes <br> coordinating with your team clear and efficient.</p>
             </div>
             <div class="junior">
-                <div class="te-2 flex">
+                <div class="pro-prog te-2 flex">
                     <div class="te-2-1 pr-24 p-5 m-6 pt-28">
                         <h3 class="text-left pl-11 text-2xl pb-2 font-extrabold text-white">Junior Program</h3>
                         <p class="text-sm font-medium ml-[35px] pb-2 text-white pt-4 text-center w-[400px]">Even when you're writing something professional, your tone should be conversational. Texting is intimate, and you don't want to sound like a robot.</p>
@@ -126,148 +147,223 @@
             <h1 class="text-3xl font-extrabold text-center">Our New Products</h1>
             <p class="text-sm font-medium ml-[32px] pt-4 text-slate-600 text-center">How many times have you heard. Cut down on confusion and delays <br> with a to-the-point text reminder.</p>
            </div>
-
-           <div class="columns-2">
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/5.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
+           <div class="">
+            <div class="columns-1 items-center lg:columns-2">
+                <div class="flex shadow-md ml-5">
+                    <div class="flex-row lg:bg-[#FFF] flex m-10">
+                     <div class="im-5">
+                          <img src="Images/5.png" alt="">
                      </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class=" flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
                      </div>
-                 </div>
+                    </div>
                 </div>
-            </div>
-            
-            
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/6.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
+                
+                
+                <div class="flex shadow-md ml-5">
+                    <div class="bg-[#FFF] flex m-10">
+                     <div class=" ">
+                          <img src="Images/6.png" alt="">
                      </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class="flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
                      </div>
-                 </div>
+                    </div>
+                </div> <br>
+                
+                
+                <div class="flex shadow-md ml-5">
+                    <div class="bg-[#FFF] flex m-10">
+                     <div class=" ">
+                          <img src="Images/7.png" alt="">
+                     </div>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class="flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
+                     </div>
+                    </div>
                 </div>
-            </div> <br>
-            
-            
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/7.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
+                
+                
+                <div class="flex shadow-md ml-5">
+                    <div class="bg-[#FFF] flex m-10">
+                     <div class=" ">
+                          <img src="Images/8.png" alt="">
                      </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class="flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
                      </div>
-                 </div>
+                    </div>
                 </div>
-            </div>
-            
-            
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/8.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
+    
+    
+                <div class="flex shadow-md ml-5">
+                    <div class="bg-[#FFF] flex m-10">
+                     <div class=" ">
+                          <img src="Images/9.png" alt="">
                      </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class="flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
                      </div>
-                 </div>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/9.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
+    
+                <div class="flex shadow-md ml-5">
+                    <div class="bg-[#FFF] flex m-10">
+                     <div class=" ">
+                          <img src="Images/10.png" alt="">
                      </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
+                     <div class="">
+                         <div class="flex pl-4 space-x-1 pt-2">
+                            <img src="Frame.png" alt=""> <p>5.0</p>
+                            <img src="Frame (1).png" alt=""> <p>20</p>
+                            <img src="Frame (2).png" alt=""> <p>200</p>
+                         </div>
+                         <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
+                         <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
+                         <div class="flex">
+                             <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
+                             <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-500">Delivery Fee : Free</button>
+                         </div>
                      </div>
-                 </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex shadow-md ml-5">
-                <div class="bg-[#FFF] flex m-10">
-                 <div class=" ">
-                      <img src="Images/10.png" alt="">
-                 </div>
-                 <div class="">
-                     <div class="flex pl-4 space-x-1 pt-2">
-                        <img src="Frame.png" alt=""> <p>5.0</p>
-                        <img src="Frame (1).png" alt=""> <p>20</p>
-                        <img src="Frame (2).png" alt=""> <p>200</p>
-                     </div>
-                     <h5 class="text-1xl font-bold pt-3 pl-4">World Cup Flags Football</h5>
-                     <p class="text-sm font-medium pt-5 pl-4 text-slate-600 ">Cut down on confusion and delays choice <br> depends all off.</p>
-                     <div class="flex">
-                         <p class="text-orange-600 font-semibold text-1xl pt-3 pl-4">Price - $22.00</p>
-                         <img class="pl-4" src="Frame (3).svg" alt=""> <button class="border-hidden text-sm  pt-1 pl-1 text-gray-400">Delivery Fee : Free</button>
-                     </div>
-                 </div>
-                </div>
-            </div>
-             
+                 
+               </div>
            </div>
+
+
         
         </section>
+
+        <section class="qestion mt-16">
+
+            <div class="pb-11">
+                <h1 class="text-3xl font-extrabold text-center">Clients Question</h1>
+                <p class="text-sm font-medium ml-[32px] pt-4 text-slate-600 text-center">Here you can not heard. Cut down on confusion and delays <br> with a this always be text reminder.</p>
+               </div>
+
+              <div class="columns-1 mb-4 p-5 lg:flex">
+                <div class="ml-3 mb-7">
+                    <img src="Images/11.png" alt="">
+                </div>
+                <div class="">
+                    <div class="collapse ml-7 collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                        </div>
+                      </div>
+
+                   <div class="collapse ml-7 collapse-plus bg-base-200">
+                       <input type="radio" name="my-accordion-3" checked="checked" /> 
+                       <div class="collapse-title text-xl font-medium">
+                        Hockey Training
+                       </div>
+                       <div class="collapse-content"> 
+                        <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                       </div>
+                     </div>
+                     <div class="collapse ml-7 collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                            <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                        </div>
+                      </div>
+                     <div class="collapse ml-7 collapse-plus bg-base-200">
+                       <input type="radio" name="my-accordion-3" /> 
+                       <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                       </div>
+                       <div class="collapse-content"> 
+                        <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                       </div>
+                     </div>
+                     <div class="collapse ml-7 collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                            <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                        </div>
+                      </div>
+                      <div class="collapse ml-7 collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content"> 
+                            <p>Hello that's awesome and we make something.That's <br> all make it fun for your own.</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </section>
+
         <section>
             <div class="pb-9">
                 <h1 class="text-3xl font-extrabold text-center">Our New Products</h1>
                 <p class="text-sm font-medium ml-[32px] pt-4 text-slate-600 text-center">How many times have you heard. Cut down on confusion and delays <br> with a to-the-point text reminder.</p>
                </div>
         <div class="all-off">
-            <div class="columns-2">
+            <div class="columns-1 lg:columns-2">
                 <div class="">
                     <div class="call mt-8 ml-12 w-80 h-[570px] shadow-md">
     
@@ -297,22 +393,24 @@
                         <form action="">
     
                             <div class="input ml-7 shadow-md w-[540px] h-[610px]">
-                                  <div class="columns-2">
-                                      <span class="text-sm font-bold pl-2">Your Name</span> <br><input class="bg-gray-50 p-2 text-xs text-gray-300" type="text" placeholder="Enter your full name"> <br><br><br>
-                                      <span class="text-sm font-bold pl-2">Your Email</span> <br> <input class="bg-gray-50 p-2 text-xs text-gray-300" type="email" placeholder="Enter your email"> <br><br><br>
+                                  <div class="columns-1 lg:columns-2">
+                                      <span class="text-sm font-bold pl-2">Your Name</span> <br><input class="bg-[#FFF]p-2 text-xs text-[#FFF]" type="text" placeholder="Enter your full name"> <br><br><br>
+                                      <span class="text-sm font-bold pl-2">Your Email</span> <br> <input class="bg-[#FFF]p-2 text-xs text-[#FFF]" type="email" placeholder="Enter your email"> <br><br><br>
                   
-                                      <span class="text-sm font-bold pl-2">Subject</span> <br> <input class="bg-gray-50 p-2 text-xs text-gray-300" type="text" placeholder="Enter your subject"> <br><br><br>
+                                      <span class="text-sm font-bold pl-2">Subject</span> <br> <input class="bg-[#FFF]p-2 text-xs text-[#FFF]" type="text" placeholder="Enter your subject"> <br><br><br>
                   
-                                      <span class="text-sm font-bold pl-2">Phone Number</span> <br> <input class="bg-gray-50 p-2 text-xs text-gray-300" type="text" placeholder="Enter your phone number"> <br><br><br>
+                                      <span class="text-sm font-bold pl-2">Phone Number</span> <br> <input class="bg-[#FFF]p-2 text-xs text-[#FFF]" type="text" placeholder="Enter your phone number"> <br><br><br>
                                   </div>
-                                  <span class="text-sm font-bold pl-2">Message</span> <br> <textarea class="h-80 w-96 shadow-md" name=""  id="" cols="30" rows="10"></textarea>
+                                  <span class="text-sm font-bold pl-2">Message</span> <br> <textarea class="h-80 w-96 shadow-md" name=""  id="" cols="30" rows="10"></textarea> <br><br>
+
+                                  <button class="border-hidden bg-red-500 text-sm font-bold text-center w-full h-7 text-[#FFF] rounded-1xl">Send Message</button>
                               </div>
                               </form>
                      </div>
                 </div>
             </div>
     
-            <div class="foot mt-14 bg-gray-100">
+            <div class="foot mt-14 bg-[#FFF]">
               <h3 class="text-1xl font-semibold text-center pt-9">Social Media</h3>
               <img class="justify-center pt-4 pb-4 pl-[520px]" src="Social.svg" alt="">
             </div>
@@ -320,9 +418,49 @@
 
         </section>
      </main>
-     <footer>
+     <footer class="h-[890px] lg:h-80 bg-black mt-16">
+         <div class="flex">
+            <div class="columns-1 lg:flex">
+                <div class="tex-1 mt-20 ml-24">
+                    <h3 class="text-center text-2xl lg:text-1xl text-[#FFF] font-bold">Get In Touch</h3>
+                    <p class="text-center lg:text-sm text-[#FFF] w-80 pt-3 pb-3">They are numerous messages as well as texts people receive in their Some messages are important, and some messages or not</p>
+                    <div class="flex pt-1">
+                        <img src="Frame (3).png" alt=""> <p class="text-center lg:text-sm text-[#FFF]">hockeys@support.com</p>
+                    </div>
+                    <div class="flex pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path d="M1.25 5.75C1.25 14.034 7.966 20.75 16.25 20.75H18.5C19.0967 20.75 19.669 20.5129 20.091 20.091C20.5129 19.669 20.75 19.0967 20.75 18.5V17.128C20.75 16.612 20.399 16.162 19.898 16.037L15.475 14.931C15.035 14.821 14.573 14.986 14.302 15.348L13.332 16.641C13.05 17.017 12.563 17.183 12.122 17.021C10.4849 16.4191 8.99815 15.4686 7.76478 14.2352C6.53141 13.0018 5.58087 11.5151 4.979 9.878C4.817 9.437 4.983 8.95 5.359 8.668L6.652 7.698C7.015 7.427 7.179 6.964 7.069 6.525L5.963 2.102C5.90214 1.85869 5.76172 1.6427 5.56405 1.48834C5.36638 1.33397 5.1228 1.25008 4.872 1.25H3.5C2.90326 1.25 2.33097 1.48705 1.90901 1.90901C1.48705 2.33097 1.25 2.90326 1.25 3.5V5.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> <p class="text-center lg:text-sm text-[#FFF]">(+62) 123-321-543</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="tex-2 mt-20 ml-20">
+                        <h4 class="text-sm font-bold text-[#FFF]">Company</h4>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">About Us</a> <br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Leadership</a><br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Careers</a><br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">News & Article</a><br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Legal Notice</a><br>
+                    </div>
+                    <div class="tex-3 mt-20 ml-20">
+                        <h4 class="text-sm font-bold text-[#FFF]">Support</h4>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Help Center</a> <br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">FAQ</a><br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Ticket Support</a><br>
+                        <a class="text-[#FFF] text-sm font-medium" href="#">Contact Us</a><br>
+                    </div>
+                </div>
 
+                <div class="tex-4 text-center lg: mt-20 ml-20">
+                    <h4 class="text-sm font-bold text-[#FFF]">Services</h4>
+                    <a class="text-[#FFF] text-sm font-medium" href="#">Academy</a> <br>
+                    <a class="text-[#FFF] text-sm font-medium" href="#">Group Lesson</a><br>
+                    <a class="text-[#FFF] text-sm font-medium" href="#">Private</a><br>
+                    <a class="text-[#FFF] text-sm font-medium" href="#">Lesson Hockeys</a><br>
+                    <a class="text-[#FFF] text-sm font-medium" href="#">Hockeys for Adult</a><br>
+                </div>
+            </div>
+         </div>
      </footer>
-
 </body>
 </html>
